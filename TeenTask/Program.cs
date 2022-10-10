@@ -1,15 +1,13 @@
-﻿degree();
+﻿
+int number = ReadInt("Введите число: ");
 
-void degree()
-{
-    double a;
-    double b;
-    Double c;
-    Console.WriteLine("Введите число: ");
-    a = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Введите степень: ");
-    b = Convert.ToDouble(Console.ReadLine());
-    c = Math.Pow(a, b);
-    Console.WriteLine("Число " + a + " в степени " + b + " равно " + c + "!");
+for (int i = 1; i <= number; i++)
+{ 
+    Console.Write($"{i*i*i} ");
 }
 
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
