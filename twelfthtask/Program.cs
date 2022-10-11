@@ -1,4 +1,5 @@
-﻿class Program
+﻿/* Задача 29: Напишите метод, который задаёт массив из 8 элементов и выводит их на экран. */
+class Program
 {
 
     static void Main(string[] args)
